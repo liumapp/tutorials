@@ -3,9 +3,9 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>spring-boot-testing</artifactId>
-    <packaging>war</packaging>
     <name>spring-boot-testing</name>
     <description>This is simple boot application for demonstrating testing features.</description>
+    <packaging>war</packaging>
 
     <parent>
         <artifactId>parent-boot-2</artifactId>
@@ -101,7 +101,7 @@
             <plugin>
                 <groupId>org.codehaus.gmavenplus</groupId>
                 <artifactId>gmavenplus-plugin</artifactId>
-                <version>1.6</version>
+                <version>${gmavenplus-plugin.version}</version>
                 <executions>
                     <execution>
                         <goals>
@@ -119,6 +119,7 @@
         <start-class>com.baeldung.boot.Application</start-class>
         <git-commit-id-plugin.version>2.2.4</git-commit-id-plugin.version>
         <spock.version>1.2-groovy-2.4</spock.version>
+        <gmavenplus-plugin.version>1.6</gmavenplus-plugin.version>
     </properties>
 
 </project>
